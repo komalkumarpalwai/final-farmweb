@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Product Page</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Glide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+</head>
+<nav class="w-screen h-20 bg-white  flex shadow-lg shadow-gray-500/50">
+    <div class="flex ml-20">  <img src="/images/9-2-agriculture-png-image (1).png" alt="" srcset="" class="h-20">
+     <h1 class=" text-3xl font-bold mt-4 ml-1 text-gray-300 hover:text-gray-700 ease-in duration-300">PKR FRAMS</h1>
+     </div>
+     <a href="#">
+     <div class="flex ml-56 mt-5"> <ul class="flex gap-10"><li class="text-gray-700 hover:text-orange-500 ease-in duration-300">Home</li></a>
+    <a href="#"><li class="text-gray-700 hover:text-orange-500 ease-in duration-300">Products</li></a>
+    <a href="#"> <li class="text-gray-700 hover:text-orange-500 ease-in duration-300">Blog</li></a>
+    <a href="about"> <li class="text-red-700 hover:text-orange-500 ease-in duration-300"> About Us</li></a>
+    <a href="/join">
+      <li class="flex items-center bg-green-400 px-2 hover:text-white ease-in duration-300">
+       <h2 id="myButton">JOIN <i class="fa-solid fa-arrow-up-short-wide"></i></h2>
+      </li></a>
+  </div>
+   </nav>
+   <style>
+    body{
+        overflow-x: hidden;
+    }
+   </style>
+<body class="bg-gray-100 ">
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+        <!-- Image Carousel -->
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="/images/Mango.jpg" alt="Rice Image 1"></li>
+                        <li class="glide__slide"><img src="https://wallpapers.com/images/featured/mango-evb0z302mlfebdo0.jpg" alt="Rice Image 2"></li>
+                        <li class="glide__slide"><img src="https://wallpapers.com/images/hd/mango-fruits-served-aesthetically-llsn32glep7ns6ga.jpg" alt="Rice Image 3"></li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Information -->
+        <div class="w-full md:w-1/2">
+            <h1 class="text-3xl font-semibold mb-4">Mango</h1>
+            <p class="text-gray-800 mb-4">High-quality rice sourced from local farms. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text-gray-700 mb-2">Price: $5.99</p>
+            <p class="text-gray-700 mb-2">Delivery Charge: $1.99</p>
+            <!-- Delivery Address Form -->
+            <form id="deliveryForm" class="mb-4">
+                <div class="mb-2">
+                    <label for="address" class="block text-gray-700">Delivery Address:</label>
+                    <input type="text" id="address" name="address" class="border border-gray-300 rounded-md w-full px-3 py-2" required>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Update Address</button>
+            </form>
+            <!-- Return Policy -->
+            <p class="text-gray-700 mb-2">Return Policy: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!-- Buy Now Button -->
+            <div class="flex justify-center">
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-semibold mb-4">Customer Reviews</h2>
+        <div id="reviews" class="mb-4">
+            <!-- Reviews will be dynamically added here -->
+        </div>
+        <!-- Add Review Form -->
+        <form id="addReviewForm">
+            <div class="mb-4">
+                <label for="review" class="block text-gray-700">Add a Review:</label>
+                <textarea id="review" name="review" class="border border-gray-300 rounded-md w-full px-3 py-2" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Submit Review</button>
+        </form>
+    </div>
+    <footer class="w-screen h-auto mt-0">
+        <div class="h-14 w-screen bg-green-400 text-white flex items-center justify-between px-10"> <h1 class="text-1xl">Get Connected With us on social network</h1>
+        <h1> <ul class="flex gap-5">
+      <a href="#"><li></li><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><li></li><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><li></li><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><li></li><i class="fa-brands fa-linkedin"></i></a>
+      </ul></h1></div>
+        <div class="h-56 w-screen bg-white">
+          <footer class="bg-white text-black py-12">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">PKR FARMS AND INDUSTRY</h3>
+                    <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales sapien ac augue pretium, ac placerat orci tincidunt.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="text-sm text-gray-500">
+                        <li>PaddyRice</li>
+                        <li>Mango Farm</li>
+                        <li>Vegetables</li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-sm text-gray-500">123 Main Street<br>City, State, 12345<br>Email: info@example.com<br>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+        </footer>
+        <div class="h-10 w-screen bg-blue-200">
+          <h2 class="flex items-center justify-center text-green-900 text-2xl mt-2 font-bold"> &copy; 2024 PKRFARM.COM, All rights reserved.</h2>
+        </div>
+      </footer>
+    <!-- Include Glide.js and JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Glide.js Carousel
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 1,
+            autoplay: 4000,
+            hoverpause: true,
+            gap: 0,
+            animationDuration: 800
+        }).mount();
+    
+        // Handle Delivery Address Update
+        document.getElementById('deliveryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const address = document.getElementById('address').value;
+            document.getElementById('address').value = ''; // Clear input field
+            document.getElementById('deliveryAddress').textContent = address;
+        });
+    
+        // Handle Review Submission
+        document.getElementById('addReviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const review = document.getElementById('review').value.trim();
+            if (review !== '') {
+                const reviewElement = document.createElement('p');
+                reviewElement.textContent = review;
+                document.getElementById('reviews').appendChild(reviewElement);
+                document.getElementById('review').value = ''; // Clear textarea
+            }
+        });
+    });
+    </script>
+</body>
+</html>

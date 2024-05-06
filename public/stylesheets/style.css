@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+#video{
+    height: 80vh;
+    width: 100vw;
+    border-radius: 2px;
+    opacity: 1.7;
+    position: relative; 
+}
+#hero-section{
+    position: relative;
+}
+/* styles.css */
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
